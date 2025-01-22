@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+.c3{
+    color: #E17564;
+}
+
+.c2{
+    color: #BE3144;
+}
+
+.c1{
+    color: #872341;
+}
+
+.cuerpo{
+    margin-left: 13%;
+	margin-right: 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.botoncv{
+    background-color: transparent;
+    border: whitesmoke 1px solid;
+    font-family: "Silkscreen", serif;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 0px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.4s;
+    i{
+        transition: 0.4s;
+    }
+}
+
+.botoncv:hover{
+    transition: 0.4s;
+    background-color: #ffffff;
+    color: black;
+    i{
+        transition: 0.4s;
+        color: black;
+    }
+}
+
+.imagen{
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    img{
+        width: 340px;
+    }
+}
+
+.imagen::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    transition: 1s;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255,0) 30%,
+        rgba(255,255,255, .8),
+        rgba(255,255,255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+}
+
+.imagen:hover::before{
+    transition: 1s;
+    animation: shine 2s infinite linear;  
+}
+
+@keyframes shine{
+    0% {left:-100px}
+    20% {left: 100%}
+    100%{left: 100%}
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+
+    .texto{
+        font-size: 23px;
+        line-height: 3px;
+
+        h3{
+            font-size: 35px;
+            font-family: "Silkscreen", serif;
+            font-weight: 700;
+            
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .redes{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 35px;
+            .redes2{
+                margin-left: 20px;
+                display: flex;
+                gap: 17px;
+                a{
+                    transition: 0.3s;
+                    font-size: 20px;
+                }
+                
+                a:hover{
+                    transition: 0.3s;
+                    transform: scale(1.2);
+                }
+            }
+            
+            
+        }
+    }
+}
+
+
+.experiencia h1 {
+    font-size: 35px;
+    font-family: "Silkscreen", serif;
+    position: relative;
+    filter: drop-shadow(5px 5px 4px #000000);
+    animation: float 3s ease-in-out infinite;
+}
+
+.proyectos h1{
+    font-size: 35px;
+    font-family: "Silkscreen", serif;
+    position: relative;
+    filter: drop-shadow(5px 5px 4px #000000);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-13px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.experiencia{
+    margin-top: 11%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;   
+    gap: 10px; 
+    
+    h1{
+        margin-bottom: 30px;
+    }
+
+    .empleo{
+        text-align: left;
+        height: min-content;
+
+
+        h4, h5, h6{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .iconoEmpleo{
+            background-color: #595a7b;
+            padding: 8px;
+            padding-left: 9px;
+            padding-right: 9px;
+            border-radius: 30px;
+            transition: transform .7s ease-in-out;
+        }
+
+        .iconoEmpleo:hover{
+            transform: rotate(360deg);
+            transition: 0.4s;
+        }
+
+        .nombre{ 
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            h4{
+                font-size: 20px;
+            }
+
+            h5{
+                font-size: 14px;
+            }
+        }
+        .contenidoEmpleo{
+            margin-left: 14px;
+            padding-left: 32px;
+            height: 130px;
+
+            ul{
+                line-height: 32px;
+            }
+
+            h6{
+                font-size: 14px;
+                margin-top: 10px;
+                
+            }
+        }
+    }
+}
+
+
+
+.tecnologias{
+    margin-top: 11%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+        margin-bottom: 60px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        justify-content: flex-start;
+        align-items: baseline;
+        row-gap: 35px;
+        column-gap: 35px;
+        
+
+        .contenedor{
+            box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.75);
+            transition: 0.3s;
+            height: 100%;
+            border-radius: 5px;
+            padding-bottom: 10px;
+            background: rgb(18,30,65);
+            background: radial-gradient(circle, rgba(18,30,65,1) 0%, rgb(7, 2, 38) 100%);
+            
+            h2{
+                font-size: 30px;
+            }
+
+            .front{
+                h2{
+                    background: #183FCF;
+                    background: linear-gradient(to top, #385bdc 0%, #00D5EA 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(5px 5px 4px #000000);
+                }
+            }
+
+            .back{
+                h2{
+                    background: #C52323;
+                    background: linear-gradient(to top, #C52323 0%, #EA7900 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(5px 5px 4px #000000);
+                }
+            }
+
+            .herramientas{
+                h2{
+                    background: #FFE620;
+                    background: linear-gradient(to bottom, #FFE620 0%, #C2DD00 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(5px 5px 4px #000000);
+                }
+            }
+
+            .otros{
+                h2{
+                    background: #FF04D0;
+                    background: linear-gradient(to bottom, #FF04D0 0%, #A64CDD 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(5px 5px 4px #000000);
+                }
+            }
+
+            .grid2{
+                display: grid;
+                grid-template-columns: repeat(3,3fr);
+                row-gap: 10px;
+                column-gap: 10px;
+                
+                .tecnlogia{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    
+                    .imagenTecnologia{
+                        position: relative;
+                        top: 0;
+                        transition: top ease 0.3s;
+                        width: 50px;
+                        transition: 0.4s;
+                        filter: drop-shadow(5px 5px 4px #000000);
+                    }
+                    .imagenTecnologia:hover{
+                        transition: 0.4s;
+                        top: -7px;
+                    }
+                }
+                
+            }
+            
+        }
+
+        /* .contenedor:hover{
+            transition: 0.3s;
+            box-shadow: 0px 0px 25px 4px rgb(9, 19, 51);
+        } */
+    }
+}
+
+.botonLive{
+    background: #BE3144;
+    border: #BE3144 2px solid;
+    width: 150px;
+    font-family: "Silkscreen", serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    color: whitesmoke;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.botonLive:hover{
+    transition: 0.4s;
+    background-color: #872341;
+    border: #872341 2px solid;
+}
+
+.botonGit{
+    background-color: transparent;
+    font-family: "Silkscreen", serif;
+    width: 150px;
+    border: whitesmoke 1px solid;
+    font-size: 16px;
+    padding: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.4s;
+    i{
+        transition: 0.4s;
+    }
+}
+
+.botonGit:hover{
+    transition: 0.4s;
+    background-color: #ffffff;
+    color: black;
+    i{
+        transition: 0.4s;
+        color: black;
+    }
+}
+
+.proyectos{
+    margin-top: 11%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+    h1{
+        margin-bottom: 50px;
+    }
+
+    .columna{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .proyecto{
+            display: flex;
+            gap: 20px;
+            
+            .imagenProyecto {
+                height: 100%;
+                position: relative;
+                
+              
+                img {
+                  transition: 0.4s;
+                  width: 420px;
+                  box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.447);
+                }
+              
+                .iconoLink {
+                  position: absolute;
+                  font-size: 40px;
+                  font-weight: 800;
+                  z-index: 99;
+                  right: 46%;
+                  top: 35%;
+                  display: none; /* Inicialmente oculto */
+                }
+              
+                /* Cuando se hace hover sobre el contenedor, muestra el icono y oscurece la imagen */
+                &:hover {
+                  img {
+                    filter: brightness(40%);
+                  }
+              
+                  .iconoLink {
+                    transition: 0.4s;
+                    display: block;
+                  }
+                }
+              }
+              
+
+            .textoProyecto{
+                padding-bottom: 6px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                gap: 10px;
+
+                p{
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                h2{
+                    font-size: 30px;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+
+            .tecnologiasProyecto{
+                display: flex;
+                gap: 10px;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                img{
+                    transition: transform .7s ease-in-out;
+                    width: 25px;
+                    
+                }
+
+                img:hover{
+                    transform: rotate(360deg);
+                    transition: 0.3s;
+                }
+            }
+
+            .botonesProyecto{
+                padding: 0px;
+                gap: 20px;
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        a:hover{
+            color: #E17564;
+        }
+    }
+
+    .contacto{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;   
+        gap: 10px; 
+        
+        h1{
+            margin-bottom: 30px;
+        }
+
+        .formulario{
+            form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                flex-direction: column;
+            }
+            
+        }
+
+        input[type='text'], input[type='email']{
+            background-color: rgba(0, 0, 0, 0.329);
+            padding: 10px;
+            font-family: "Pixelify Sans", serif;
+            font-size: 19px;
+            border: 3px solid #BE3144;
+            color: white;
+            width: 500px;
+        }
+
+        input[type='submit']{
+            cursor: pointer;
+            background-color: #BE3144;
+            padding: 10px;
+            font-family: "Silkscreen", serif;
+            font-size: 15px;
+            border: 3px solid #BE3144;
+            color: white;
+            width: 300px;
+            margin-top: 20px;
+            transition: 0.4s;
+        }
+
+        textarea{
+            background-color: rgba(0, 0, 0, 0.329);
+            padding: 10px;
+            font-family: "Pixelify Sans", serif;
+            font-size: 19px;
+            border: 3px solid #BE3144;
+            color: white;
+            width: 500px;
+            height: 200px;
+            resize: none;
+        }
+
+        input[type='submit']:hover{
+            transition: 0.4s;
+            background-color: #872341;
+            border: #872341 3px solid;
+        }
+    }
+}
+

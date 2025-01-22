@@ -1,0 +1,451 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/index.css";
+---
+
+<Layout>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../styles/index.css" />
+    </head>
+    <body>
+      <span id="sobremi"></span>
+      <div class="cuerpo">
+        <div class="banner">
+          <div class="texto">
+            <h5 class="c3">Hola ✌🏻, soy</h5>
+            <h3>JUANJO GARCÍA</h3>
+            <h4 class="c2">Programador Full-Stack</h4>
+            <p>Aplicaciones web escalables e interactivas.</p>
+            <div class="redes">
+              <a href="../../public/Curriculum.pdf" download="CurriculumJuanjoGarcía.pdf"><button class="botoncv"><i class="bi bi-filetype-pdf"></i> Descargar CV</button></a>
+              <div class="redes2">
+                <a href="https://github.com/Juanjo-png?tab=repositories"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-josé-garcía-gonzález-583326345/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="imagen">
+            <img
+              src="../../public/images/CurriculumFoto.png"
+            />
+            <span id="experiencia"></span>
+          </div>
+        </div>
+        <div class="experiencia" >
+          <h1>EXPERIENCIA</h1>
+          <div class="empleo">
+            <div class="nombre">
+              <i class="bi bi-calendar-check iconoEmpleo"></i>
+              <h4 class="c2">
+                Programador Full Stack / Programador Wordpress
+              </h4><h5>-</h5><h5 class="c3">Freelance</h5>
+            </div>
+            <div class="contenidoEmpleo">
+              <h6>Diciembre 2024 - Actualmente</h6>
+              <ul>
+                <li>Creación de Front-End y Back-End mediante Angular, NodeJS, MySQL</li>
+                <li>Diseño de sitios web con Figma, HMTL, CSS, SASS y TailwindCSS</li>
+                <li>Maquetación y Mantenimiento de páginas web mediante Wordpress y Elementor PRO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="empleo">
+            <div class="nombre">
+              <i class="bi bi-calendar-check iconoEmpleo"></i>
+              <h4 class="c2">
+                Programador Full Stack / Programador Wordpress
+              </h4><h5>-</h5><h5 class="c3">FourMarketing360</h5>
+            </div>
+            <div class="contenidoEmpleo">
+              <h6>Enero 2024 - Diciembre 2024</h6>
+              <span id="tecnologias"></span>
+              <ul>
+                <li>Creación de scripts de PHP y JavaScript para implementación en Wordpress</li>
+                <li>Maquetación de sitios web con Elementor Pro, PHP y JavaScript</li>
+                <li>Automatización de procesos mediante herramientas como make.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tecnologias">
+            <h1>Tecnologías</h1>
+            <div class="grid">
+              <div class="contenedor">
+                <div class="front">
+                  <h2>FRONT-END</h2>
+                </div>
+                <div class="grid2">
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/html.png"
+                      alt=""
+                    />
+                    <p>HTML5</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/css.png"
+                      alt=""
+                    />
+                    <p>CSS</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/js.png"
+                      alt=""
+                    />
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/angular.png"
+                      alt=""
+                    />
+                    <p>Angular</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/ts.png"
+                      alt=""
+                    />
+                    <p>TypeScript</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/astro.png"
+                      alt=""
+                    />
+                    <p>Astro</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/bootstrap.png"
+                      alt=""
+                    />
+                    <p>BootStrap</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/sass.png"
+                      alt=""
+                    />
+                    <p>SASS</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/tailwind.png"
+                      alt=""
+                    />
+                    <p>TailwindCSS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contenedor">
+                <div class="back">
+                  <h2>BACK-END</h2>
+                </div>
+                <div class="grid2">
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/php.png"
+                      alt=""
+                    />
+                    <p>PHP</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/node.png"
+                      alt=""
+                    />
+                    <p>NodeJS</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/laravel.png"
+                      alt=""
+                    />
+                    <p>Laravel</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/express.png"
+                      alt=""
+                    />
+                    <p>ExpressJS</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/mysql.png"
+                      alt=""
+                    />
+                    <p>MySQL</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/mongodb.png"
+                      alt=""
+                    />
+                    <p>MongoDB</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/python.png"
+                      alt=""
+                    />
+                    <p>Python</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/java.png"
+                      alt=""
+                    />
+                    <p>Java</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contenedor">
+                <div class="herramientas">
+                  <h2>HERRAMIENTAS</h2>
+                </div>
+                <div class="grid2">
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/git.png"
+                      alt=""
+                    />
+                    <p>Git</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/github.png"
+                      alt=""
+                    />
+                    <p>GitHub</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/vercel.png"
+                      alt=""
+                    />
+                    <p>Vercel</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/wordpress.png"
+                      alt=""
+                    />
+                    <p>Wordpress</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/terminal.png"
+                      alt=""
+                    />
+                    <p>Terminal</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/virtualbox.png"
+                      alt=""
+                    />
+                    <p>Virtualbox</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/unity.png"
+                      alt=""
+                    />
+                    <p>Unity</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contenedor">
+                <div class="otros">
+                  <h2>OTROS</h2>
+                </div>
+                <div class="grid2">
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/figma.png"
+                      alt=""
+                    />
+                    <p>Figma</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/premiere.png"
+                      alt=""
+                    />
+                    <p>Premiere Pro</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/excel.png"
+                      alt=""
+                    />
+                    <p>Excel</p>
+                  </div>
+                  <div class="tecnlogia">
+                    <img
+                      class="imagenTecnologia"
+                      src="../../public/images/stackIcons/ps.png"
+                      alt=""
+                    />
+                    <p>Photoshop</p>
+                  </div>
+                </div>
+                <span id="proyectos"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proyectos">
+          <h1>Proyectos</h1>
+          <div class="columna">
+            <div class="proyecto">
+              <a href="https://nebula-frontend-git-main-juanjo-pngs-projects.vercel.app/home">
+              <div class="imagenProyecto">
+                <i class="bi bi-box-arrow-up-left iconoLink"></i>
+                <img src="../../public/images/ProyectosIMG/Proyecto1.png" alt="" />
+              </div>
+              </a>
+              <div class="textoProyecto">
+                <a href="https://nebula-frontend-git-main-juanjo-pngs-projects.vercel.app/home"><h2>Nebula Editorial</h2></a>
+                <p>
+                  Sitio web de una editorial hipotética con catálogo, compraventa y sección de administrador.
+                </p>
+                <div class="tecnologiasProyecto">
+                  <img src="../../public/images/stackIcons/angular.png" alt="">
+                  <img src="../../public/images/stackIcons/node.png" alt="">
+                  <img src="../../public/images/stackIcons/express.png" alt="">
+                  <img src="../../public/images/stackIcons/mysql.png" alt="">
+                  <img src="../../public/images/stackIcons/vercel.png" alt="">
+                </div>
+                <div class="botonesProyecto">
+                    <a href="https://nebula-frontend-git-main-juanjo-pngs-projects.vercel.app/home"><button class="botonLive"><i class="bi bi-display"></i> DEMO</button></a>
+                    <a href="https://github.com/Juanjo-png/nebula-frontend"><button class="botonGit"><i class="bi bi-github"></i> Github</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto">
+              <a href="https://pokedex-nacional-three.vercel.app/home">
+              <div class="imagenProyecto">
+                <i class="bi bi-box-arrow-up-left iconoLink"></i>
+                <img src="../../public/images/ProyectosIMG/Proyecto2.png" alt="" />
+              </div>
+              </a>
+              <div class="textoProyecto">
+                <a href="https://pokedex-nacional-three.vercel.app/home"><h2>Pokedex Nacional</h2></a>
+                <p>
+                  Aplicación web que emula el dispositivo de la conocida saga de juegos de Pokémon. Muestra un listado de las mas de 1000 criaturas y sus respectivas características.
+                </p>
+                <div class="tecnologiasProyecto">
+                  <img src="../../public/images/stackIcons/angular.png" alt="">
+                  <img src="../../public/images/stackIcons/node.png" alt="">
+                  <img src="../../public/images/stackIcons/express.png" alt="">
+                  <img src="../../public/images/stackIcons/ts.png" alt="">
+                  <img src="../../public/images/stackIcons/vercel.png" alt="">
+                </div>
+                <div class="botonesProyecto">
+                    <a href="https://pokedex-nacional-three.vercel.app/home"><button class="botonLive"><i class="bi bi-display"></i> DEMO</button></a>
+                    <a href="https://github.com/Juanjo-png/PokedexNacional"><button class="botonGit"><i class="bi bi-github"></i> Github</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto">
+              <a href="https://teclado-interactivo.vercel.app">
+              <div class="imagenProyecto">
+                <i class="bi bi-box-arrow-up-left iconoLink"></i>
+                <img src="../../public/images/ProyectosIMG/Proyecto3.png" alt="" />
+              </div>
+              </a>
+              <div class="textoProyecto">
+                <a href="https://teclado-interactivo.vercel.app"><h2>Teclado Interactivo</h2></a>
+                <p>
+                  Teclado virtual que responde a las pulsaciones de las teclas en el teclado del usuario.
+                </p>
+                <div class="tecnologiasProyecto">
+                  <img src="../../public/images/stackIcons/html.png" alt="">
+                  <img src="../../public/images/stackIcons/css.png" alt="">
+                  <img src="../../public/images/stackIcons/js.png" alt="">
+                  <img src="../../public/images/stackIcons/vercel.png" alt="">
+                </div>
+                <div class="botonesProyecto">
+                    <a href="https://teclado-interactivo.vercel.app"><button class="botonLive"><i class="bi bi-display"></i> DEMO</button></a>
+                    <a href="https://github.com/Juanjo-png/TecladoInteractivo"><button class="botonGit"><i class="bi bi-github"></i> Github</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto">
+              <a href="https://pokedex-nacional-three.vercel.app/home">
+              <div class="imagenProyecto">
+                <i class="bi bi-box-arrow-up-left iconoLink"></i>
+                <img src="../../public/images/ProyectosIMG/Proyecto4.png" alt="" />
+              </div>
+              </a>
+              <div class="textoProyecto">
+                <a href="#"><h2>Animación Cubo RGB</h2></a>
+                <p>
+                  Animación 3D de un cubo RGB usando HTML y CSS.
+                </p>
+                <div class="tecnologiasProyecto">
+                  <img src="../../public/images/stackIcons/html.png" alt="">
+                  <img src="../../public/images/stackIcons/css.png" alt="">
+                  <img src="../../public/images/stackIcons/vercel.png" alt="">
+                </div>
+                <div class="botonesProyecto">
+                    <a href="https://pokedex-nacional-three.vercel.app/home"><button class="botonLive"><i class="bi bi-display"></i> DEMO</button></a>
+                    <a href="https://github.com/Juanjo-png/PokedexNacional"><button class="botonGit"><i class="bi bi-github"></i> Github</button></a>
+                </div>
+              </div>
+            <span id="contacto"></span>
+
+        </div>
+        <div class="contacto">
+          <h1>Contacto</h1>
+          <div class="formulario">
+            <form action="https://formsubmit.co/juanjogarciagonzalez1808@gmail.com" method="POST">
+              <input type="text" placeholder="Nombre" name="Nombre" required>
+              <input type="email" placeholder="Email" name="Email" required>
+              <input type="text" placeholder="Asunto" name="Asunto" required>
+              <textarea placeholder="Escribe aquí tu mensaje" name="Mensaje" required></textarea>
+              <input type="submit">
+              <input type="hidden" name="_next" value="http://localhost:4321">
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</Layout>
