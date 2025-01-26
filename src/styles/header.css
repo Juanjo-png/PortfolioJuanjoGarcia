@@ -117,6 +117,12 @@ h3, h1,span{
         padding-left: 5%;
         margin-bottom: 0px;
 
+        .logo{
+            h1{
+                font-size: 20px;
+            }
+        }
+
         .contenido{
             display: none;
         }
