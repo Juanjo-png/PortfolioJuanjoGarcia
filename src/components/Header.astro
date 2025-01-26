@@ -1,5 +1,6 @@
 ---
 import '../styles/header.css'
+
 ---
 
 <div class="header">
@@ -11,4 +12,17 @@ import '../styles/header.css'
         <a href="#proyectos"><h3>Proyectos</h3></a>
         <a href="#contacto"><h3>Contacto</h3></a>
     </div>
+    <div class="menu">
+        <i class="bi bi-list" onclick="openNav()" id="menuOpen"></i>
+    </div>
 </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#experiencia" onclick="closeNav()"><h3>Experiencia</h3></a>
+    <a href="#tecnologias" onclick="closeNav()"><h3>Tecnologías</h3></a>
+    <a href="#proyectos" onclick="closeNav()"><h3>Proyectos</h3></a>
+    <a href="#contacto" onclick="closeNav()"><h3>Contacto</h3></a>
+</div>
+<script src="../components/SideNav.js"></script>
+
+

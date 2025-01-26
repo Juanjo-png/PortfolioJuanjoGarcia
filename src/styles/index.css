@@ -228,7 +228,13 @@
     }
 }
 
-
+.tecnologias h1{
+    font-size: 35px;
+    font-family: "Silkscreen", serif;
+    position: relative;
+    filter: drop-shadow(5px 5px 4px #000000);
+    animation: float 3s ease-in-out infinite;
+}
 
 .tecnologias{
     margin-top: 11%;
@@ -333,11 +339,6 @@
             }
             
         }
-
-        /* .contenedor:hover{
-            transition: 0.3s;
-            box-shadow: 0px 0px 25px 4px rgb(9, 19, 51);
-        } */
     }
 }
 
@@ -563,4 +564,462 @@
         }
     }
 }
+
+/* Moviles */
+@media only screen and (max-width: 575px){
+    .cuerpo{
+        width: min-content;
+        margin-left: 0%;
+	    margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        padding: 0px;
+        margin-top: 10%;
+        
+        h5, h4{
+            padding: 0px;
+            margin: 4%;
+        }
+
+        img{
+            width: 90%;
+        }
+
+        .texto{
+            line-height: 25px;
+
+            .redes{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 6%;
+
+                .redes2{
+                    margin-top: 2%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .experiencia{
+        width: 80%;
+        .empleo{
+            width: 100%;
+            height: max-content;
+    
+            h4, h5, h6{
+                padding: 0px;
+                margin: 0px;
+            }
+    
+            .nombre{ 
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 3%;
+            }
+            .contenidoEmpleo{
+                margin-left: 0px;
+                padding-left: 0px;
+                height: 100%;
+    
+                ul{
+                    line-height: 32px;
+                }
+    
+                h6{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .tecnologias{
+        padding: 0px;
+        width: 100%;
+
+        .grid{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contenedor{
+                width: 70%;
+                height: auto;
+            }
+            
+        }
+    }
+
+    .proyectos{
+        width: 400px;
+        padding: 0px;
+        .columna{
+            .proyecto{
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+                .textoProyecto{
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .botonesProyecto{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .contacto{
+        width: 100%;
+        .formulario{
+            form{
+                width: 100%;
+                
+            }
+    
+            input[type='text'], input[type='email']{
+                width: 100%;
+            }
+    
+            input[type='submit']{
+                width: 80%;
+            }
+    
+            textarea{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+/*Tablets*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .cuerpo{
+        width: min-content;
+        margin-left: 0%;
+	    margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        padding: 0px;
+        margin-top: 10%;
+        
+        h5, h4{
+            padding: 0px;
+            margin: 4%;
+        }
+
+        img{
+            width: 90%;
+        }
+
+        .texto{
+            line-height: 25px;
+
+            .redes{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 6%;
+
+                .redes2{
+                    margin-top: 2%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .experiencia{
+        width: 80%;
+        .empleo{
+            width: 100%;
+            height: max-content;
+    
+            h4, h5, h6{
+                padding: 0px;
+                margin: 0px;
+            }
+    
+            .nombre{ 
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 3%;
+            }
+            .contenidoEmpleo{
+                margin-left: 0px;
+                padding-left: 0px;
+                height: 100%;
+    
+                ul{
+                    line-height: 32px;
+                }
+    
+                h6{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .tecnologias{
+        padding: 0px;
+        width: 100%;
+
+        .grid{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contenedor{
+                width: 70%;
+                height: auto;
+            }
+            
+        }
+    }
+
+    .proyectos{
+        width: 400px;
+        padding: 0px;
+        .columna{
+            .proyecto{
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+                .textoProyecto{
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .botonesProyecto{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .contacto{
+        width: 100%;
+        .formulario{
+            form{
+                width: 100%;
+                
+            }
+    
+            input[type='text'], input[type='email']{
+                width: 100%;
+            }
+    
+            input[type='submit']{
+                width: 80%;
+            }
+    
+            textarea{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+/*Portatil*/
+@media (min-width: 768px) and (max-width: 993px) {
+    .cuerpo{
+        width: min-content;
+        margin-left: 0%;
+	    margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .banner{
+        gap: 40px;
+    }
+
+    .experiencia{
+        width: 80%;
+        .empleo{
+            width: 100%;
+            height: max-content;
+    
+            h4, h5, h6{
+                padding: 0px;
+                margin: 0px;
+            }
+    
+            .nombre{ 
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 3%;
+            }
+            .contenidoEmpleo{
+                margin-left: 0px;
+                padding-left: 0px;
+                height: 100%;
+    
+                ul{
+                    line-height: 32px;
+                }
+    
+                h6{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .tecnologias{
+        width: 90%;
+
+        .grid{
+
+            .contenedor{
+                column-gap: 10px;
+                .grid2{
+                    .tecnlogia{
+                        .imagenTecnologia{
+                            width: 50px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+
+    .proyectos{
+        width: 700px;
+        padding: 0px;
+        .columna{
+            .proyecto{
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .imagenProyecto{
+                    width: 600px;
+                    img{
+                        width: 100%;
+                    }
+                }
+    
+                .textoProyecto{
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .botonesProyecto{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+
+    .botonLive{
+        width: 300px;
+    }
+
+    .botonGit{
+        width: 300px;
+    }
+
+    .contacto{
+        width: 100%;
+        .formulario{
+            form{
+                width: 100%;
+                
+            }
+    
+            input[type='text'], input[type='email']{
+                width: 100%;
+            }
+    
+            input[type='submit']{
+                width: 80%;
+            }
+    
+            textarea{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+
 

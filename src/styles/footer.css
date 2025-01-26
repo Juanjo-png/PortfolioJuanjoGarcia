@@ -62,3 +62,44 @@
         font-family: "Silkscreen", serif;
     }
 }
+
+@media only screen and (max-width: 575px){
+    .footer{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        .columna{
+            .datos{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .footer{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        .columna{
+            .datos{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .footer{
+        display: flex;
+        gap: 10px;
+        
+        .columna{
+
+            .datos{
+                text-align: right;
+            }
+        }
+
+    }
+}
