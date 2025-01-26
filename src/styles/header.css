@@ -61,7 +61,11 @@ h3, h1,span{
 
     .contenido{
         display: flex;
-        gap: 45px;
+        gap: 20%;
+
+        a{
+            font-size: 100%;
+        }
 
         a:hover{
             transition: 0.4s;
