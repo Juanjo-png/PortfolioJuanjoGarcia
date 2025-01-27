@@ -1296,5 +1296,107 @@
     }
 }
 
+@media only screen and (min-width: 1600px){
+    .banner{
+        .texto{
+            line-height: 20%;
+            h5, h4{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 45px;
+            }
+        }
+
+        font-size: 50px;
+       .imagen{
+        width: auto;
+        img{
+            width: 400px;
+        }
+       }
+
+    }
+
+
+    .experiencia{
+        .empleo{
+            width: 100%;
+            padding-left: 13%;
+            height: max-content;
+    
+            h4, h5, h6{
+                padding: 0px;
+                margin: 0px;
+            }
+    
+            .nombre{ 
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 3%;
+            }
+            .contenidoEmpleo{
+                margin-left: 0px;
+                padding-left: 0px;
+                height: 100%;
+    
+                ul{
+                    line-height: 32px;
+                }
+    
+                h6{
+                    font-size: 14px;
+                    margin-top: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .tecnologias{
+        .grid{
+
+            .contenedor{
+                column-gap: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                .grid2{
+                    .tecnlogia{
+                        font-size: 22px;
+                        .imagenTecnologia{
+                            width: 80px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+
+    .contacto{
+        width: 100%;
+        .formulario{
+            form{
+                width: 100%;
+                
+            }
+    
+            input[type='text'], input[type='email']{
+                width: 80%;
+            }
+    
+            input[type='submit']{
+                width: 50%;
+            }
+    
+            textarea{
+                width: 80%;
+            }
+        }
+        
+    }
+}
+
 
 
